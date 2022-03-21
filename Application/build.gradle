@@ -35,15 +35,15 @@ allprojects {
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 27
+    compileSdkVersion 30
 
     defaultConfig {
-        applicationId "com.android.multiwindowplayground"
+        applicationId "com.snapyr.docstest1"
         minSdkVersion 24
-        targetSdkVersion 27
+        targetSdkVersion 30
         versionCode 1
         versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
 
     }
     buildTypes {
@@ -61,7 +61,7 @@ android {
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:27.0.0'
-    androidTestCompile 'com.android.support:support-annotations:27.0.0'
-    androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2.1'
+    compile 'androidx.appcompat:appcompat:1.0.0'
+    androidTestCompile 'androidx.annotation:annotation:1.0.0'
+    androidTestCompile 'androidx.test.espresso:espresso-core:3.1.0'
 }

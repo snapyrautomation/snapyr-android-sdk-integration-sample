@@ -14,7 +14,7 @@
   limitations under the License.
   -->
 
-<manifest package="com.android.multiwindowplayground"
+<manifest package="com.snapyr.docstest1"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
@@ -27,7 +27,7 @@
          Note that we are setting the task affinity to "" to ensure each activity is launched
          into a separate task stack. -->
         <activity
-            android:name="com.android.multiwindowplayground.MainActivity"
+            android:name="com.snapyr.docstest1.MainActivity"
             android:taskAffinity="">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -37,7 +37,7 @@
 
         <!-- This Activity cannot be resized and is always displayed full screen. -->
         <activity
-            android:name="com.android.multiwindowplayground.activities.UnresizableActivity"
+            android:name="com.snapyr.docstest1.activities.UnresizableActivity"
             android:resizeableActivity="false"
             android:taskAffinity="" />
 
@@ -45,7 +45,7 @@
         (500dp at its shortest side). It is launched in the top/end (top/right) corner by default.
          These attributes are defined in the 'layout' tag within an Activity definition. -->
         <activity
-            android:name="com.android.multiwindowplayground.activities.MinimumSizeActivity"
+            android:name="com.snapyr.docstest1.activities.MinimumSizeActivity"
             android:launchMode="singleInstance"
             android:taskAffinity="">
             <layout
@@ -59,25 +59,25 @@
         <!-- In split-screen mode, this Activity is launched adjacent to another Activity. This is
           controlled via a flag set in the intent that launches this Activity. -->
         <activity
-            android:name="com.android.multiwindowplayground.activities.AdjacentActivity"
+            android:name="com.snapyr.docstest1.activities.AdjacentActivity"
             android:taskAffinity="" />
 
         <!-- This Activity is launched within an area defined in its launch intent. -->
         <activity
-            android:name="com.android.multiwindowplayground.activities.LaunchBoundsActivity"
+            android:name="com.snapyr.docstest1.activities.LaunchBoundsActivity"
             android:taskAffinity="" />
 
         <!-- This activity handles all configuration changes itself.
         Callbacks for configuration changes are received in 'onConfigurationChanged'. -->
         <activity
-            android:name="com.android.multiwindowplayground.activities.CustomConfigurationChangeActivity"
+            android:name="com.snapyr.docstest1.activities.CustomConfigurationChangeActivity"
             android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
             android:launchMode="singleInstance"
             android:taskAffinity="" />
 
         <!-- This Activity is launched in a new task without any special flags or settings. -->
         <activity
-            android:name="com.android.multiwindowplayground.activities.BasicActivity"
+            android:name="com.snapyr.docstest1.activities.BasicActivity"
             android:launchMode="singleInstance"
             android:taskAffinity="" />
 

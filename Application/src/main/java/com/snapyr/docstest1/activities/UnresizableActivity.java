@@ -14,27 +14,29 @@
  * limitations under the License.
  */
 
-package com.android.multiwindowplayground.activities;
+package com.snapyr.docstest1.activities;
 
-import com.android.multiwindowplayground.R;
+import com.snapyr.docstest1.R;
 
 import android.os.Bundle;
 import android.view.View;
 
 /**
- * This Activity has a minimum size defined in the AndroidManifeset.
+ * This Activity is defined as unresizable in the AndroidManifest.
+ * This means that this activity is always launched full screen and will not be resized by the
+ * system.
  *
- * @see com.android.multiwindowplayground.MainActivity#onStartMinimumSizeActivity(View)
+ * @see com.snapyr.docstest1.MainActivity#onStartUnresizableClick(View)
  */
-public class MinimumSizeActivity extends LoggingActivity {
+public class UnresizableActivity extends LoggingActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_logging);
 
-        setBackgroundColor(R.color.pink);
-        setDescription(R.string.activity_minimum_description);
+        setBackgroundColor(R.color.purple);
+        setDescription(R.string.activity_description_unresizable);
     }
 
 }

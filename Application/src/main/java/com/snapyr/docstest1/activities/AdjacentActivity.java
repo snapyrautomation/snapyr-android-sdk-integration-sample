@@ -14,29 +14,28 @@
  * limitations under the License.
  */
 
-package com.android.multiwindowplayground.activities;
+package com.snapyr.docstest1.activities;
 
-import com.android.multiwindowplayground.R;
+import com.snapyr.docstest1.R;
 
 import android.os.Bundle;
 import android.view.View;
 
 /**
- * This Activity is defined as unresizable in the AndroidManifest.
- * This means that this activity is always launched full screen and will not be resized by the
- * system.
+ * This Activity is to be launched adjacent to another Activity using the {@link
+ * android.content.Intent#FLAG_ACTIVITY_LAUNCH_ADJACENT}.
  *
- * @see com.android.multiwindowplayground.MainActivity#onStartUnresizableClick(View)
+ * @see com.snapyr.docstest1.MainActivity#onStartAdjacentActivity(View)
  */
-public class UnresizableActivity extends LoggingActivity {
+public class AdjacentActivity extends LoggingActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_logging);
 
-        setBackgroundColor(R.color.purple);
-        setDescription(R.string.activity_description_unresizable);
+        setBackgroundColor(R.color.teal);
+        setDescription(R.string.activity_adjacent_description);
     }
 
 }

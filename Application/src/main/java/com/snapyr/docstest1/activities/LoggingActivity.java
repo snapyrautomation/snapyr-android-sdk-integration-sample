@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.android.multiwindowplayground.activities;
+package com.snapyr.docstest1.activities;
 
-import com.android.multiwindowplayground.R;
+import com.snapyr.docstest1.R;
 import com.example.android.common.logger.Log;
 import com.example.android.common.logger.LogFragment;
 import com.example.android.common.logger.LogWrapper;
@@ -25,9 +25,9 @@ import com.example.android.common.logger.MessageOnlyLogFilter;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.os.PersistableBundle;
-import android.support.annotation.ColorRes;
-import android.support.annotation.StringRes;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.ColorRes;
+import androidx.annotation.StringRes;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 

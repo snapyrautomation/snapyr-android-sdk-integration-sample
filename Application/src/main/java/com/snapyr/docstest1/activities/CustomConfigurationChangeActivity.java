@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.android.multiwindowplayground.activities;
+package com.snapyr.docstest1.activities;
 
-import com.android.multiwindowplayground.R;
+import com.snapyr.docstest1.R;
 
 import android.content.res.Configuration;
 import android.os.Bundle;
@@ -28,7 +28,7 @@ import android.view.View;
  * call to {@link #onConfigurationChanged(Configuration)}, which is logged in the {@link
  * LoggingActivity}.
  *
- * @see com.android.multiwindowplayground.MainActivity#onStartCustomConfigurationActivity(View)
+ * @see com.snapyr.docstest1.MainActivity#onStartCustomConfigurationActivity(View)
  */
 public class CustomConfigurationChangeActivity extends LoggingActivity {
 

@@ -14,28 +14,30 @@
  * limitations under the License.
  */
 
-package com.android.multiwindowplayground.activities;
+package com.snapyr.docstest1.activities;
 
-import com.android.multiwindowplayground.R;
+import com.snapyr.docstest1.R;
 
 import android.os.Bundle;
 import android.view.View;
 
 /**
- * This Activity is to be launched adjacent to another Activity using the {@link
- * android.content.Intent#FLAG_ACTIVITY_LAUNCH_ADJACENT}.
+ * This activity is the most basic, simeple use case and is to be launched without any special
+ * flags
+ * or settings.
  *
- * @see com.android.multiwindowplayground.MainActivity#onStartAdjacentActivity(View)
+ * @see com.snapyr.docstest1.MainActivity#onStartBasicActivity(View)
  */
-public class AdjacentActivity extends LoggingActivity {
+public class BasicActivity extends LoggingActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_logging);
 
-        setBackgroundColor(R.color.teal);
-        setDescription(R.string.activity_adjacent_description);
-    }
+        // Set the color and description
+        setDescription(R.string.activity_description_basic);
+        setBackgroundColor(R.color.gray);
 
+    }
 }

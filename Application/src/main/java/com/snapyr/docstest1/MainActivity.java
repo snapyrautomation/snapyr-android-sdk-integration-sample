@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package com.android.multiwindowplayground;
+package com.snapyr.docstest1;
 
-import com.android.multiwindowplayground.activities.AdjacentActivity;
-import com.android.multiwindowplayground.activities.BasicActivity;
-import com.android.multiwindowplayground.activities.CustomConfigurationChangeActivity;
-import com.android.multiwindowplayground.activities.LaunchBoundsActivity;
-import com.android.multiwindowplayground.activities.LoggingActivity;
-import com.android.multiwindowplayground.activities.MinimumSizeActivity;
-import com.android.multiwindowplayground.activities.UnresizableActivity;
+import com.snapyr.docstest1.activities.AdjacentActivity;
+import com.snapyr.docstest1.activities.BasicActivity;
+import com.snapyr.docstest1.activities.CustomConfigurationChangeActivity;
+import com.snapyr.docstest1.activities.LaunchBoundsActivity;
+import com.snapyr.docstest1.activities.LoggingActivity;
+import com.snapyr.docstest1.activities.MinimumSizeActivity;
+import com.snapyr.docstest1.activities.UnresizableActivity;
 
 import android.app.ActivityOptions;
 import android.content.Intent;

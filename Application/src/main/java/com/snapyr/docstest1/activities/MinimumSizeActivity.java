@@ -14,30 +14,27 @@
  * limitations under the License.
  */
 
-package com.android.multiwindowplayground.activities;
+package com.snapyr.docstest1.activities;
 
-import com.android.multiwindowplayground.R;
+import com.snapyr.docstest1.R;
 
 import android.os.Bundle;
 import android.view.View;
 
 /**
- * This activity is the most basic, simeple use case and is to be launched without any special
- * flags
- * or settings.
+ * This Activity has a minimum size defined in the AndroidManifeset.
  *
- * @see com.android.multiwindowplayground.MainActivity#onStartBasicActivity(View)
+ * @see com.snapyr.docstest1.MainActivity#onStartMinimumSizeActivity(View)
  */
-public class BasicActivity extends LoggingActivity {
+public class MinimumSizeActivity extends LoggingActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_logging);
 
-        // Set the color and description
-        setDescription(R.string.activity_description_basic);
-        setBackgroundColor(R.color.gray);
-
+        setBackgroundColor(R.color.pink);
+        setDescription(R.string.activity_minimum_description);
     }
+
 }

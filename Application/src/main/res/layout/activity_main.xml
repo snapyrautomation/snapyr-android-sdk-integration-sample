@@ -29,7 +29,7 @@
         android:background="@color/white"
         android:layout_gravity="top"
         android:id="@+id/scrollview"
-        tools:context="com.android.multiwindowplayground.MainActivity">
+        tools:context="com.snapyr.docstest1.MainActivity">
 
         <LinearLayout
             android:layout_width="wrap_content"

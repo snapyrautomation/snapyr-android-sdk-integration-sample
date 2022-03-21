@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.android.multiwindowplayground.activities;
+package com.snapyr.docstest1.activities;
 
-import com.android.multiwindowplayground.R;
+import com.snapyr.docstest1.R;
 
 import android.os.Bundle;
 import android.view.View;
@@ -25,7 +25,7 @@ import android.view.View;
  * In free-form mode, this activity is to be launched within a defined bounds on screen.
  * This property is set as part of the Intent that starts this activity.
  *
- * @see com.android.multiwindowplayground.MainActivity#onStartLaunchBoundsActivity(View)
+ * @see com.snapyr.docstest1.MainActivity#onStartLaunchBoundsActivity(View)
  */
 public class LaunchBoundsActivity extends LoggingActivity {
 
