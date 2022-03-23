@@ -18,6 +18,7 @@ package com.snapyr.docstest1;
 
 import com.snapyr.docstest1.activities.LoggingActivity;
 import com.example.android.common.logger.Log;
+import com.snapyr.sdk.Snapyr;
 
 import android.os.Bundle;
 import android.view.View;
@@ -28,18 +29,32 @@ public class MainActivity extends LoggingActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Snapyr snapyr = new Snapyr.Builder(getApplicationContext(), "MrstTUONmHxwNfxndvnqEH3IbI8Sg398")
+                .enableSnapyrPushHandling()
+                .trackApplicationLifecycleEvents()
+                .recordScreenViews()
+                .build();
+
+        Snapyr.setSingletonInstance(snapyr);
     }
 
     public void onDoIdentify(View view) {
         Log.d(mLogTag, "Identify tapped");
+
+        Snapyr.with(getApplicationContext()).identify("testUser");
     }
 
     public void onDoTrack(View view) {
         Log.d(mLogTag, "Track tapped");
+
+        Snapyr.with(getApplicationContext()).track("testEvent");
     }
 
     public void onDoFlush(View view) {
         Log.d(mLogTag, "Flush tapped");
+
+        Snapyr.with(getApplicationContext()).flush();
     }
 
 
