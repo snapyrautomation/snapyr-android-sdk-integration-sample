@@ -34,6 +34,8 @@ public class MainActivity extends LoggingActivity {
                 .enableSnapyrPushHandling()
                 .trackApplicationLifecycleEvents()
                 .recordScreenViews()
+                // Flush after every event - useful for testing/debugging, but better to remove this line for production
+                .flushQueueSize(1)
                 .build();
 
         Snapyr.setSingletonInstance(snapyr);
