@@ -35,52 +35,6 @@
             </intent-filter>
         </activity>
 
-        <!-- This Activity cannot be resized and is always displayed full screen. -->
-        <activity
-            android:name="com.snapyr.docstest1.activities.UnresizableActivity"
-            android:resizeableActivity="false"
-            android:taskAffinity="" />
-
-        <!-- This Activity has a default size (750x500dp) with a minimum size
-        (500dp at its shortest side). It is launched in the top/end (top/right) corner by default.
-         These attributes are defined in the 'layout' tag within an Activity definition. -->
-        <activity
-            android:name="com.snapyr.docstest1.activities.MinimumSizeActivity"
-            android:launchMode="singleInstance"
-            android:taskAffinity="">
-            <layout
-                android:defaultHeight="500dp"
-                android:defaultWidth="750dp"
-                android:gravity="top|end"
-                android:minWidth="500dp"
-                android:minHeight="500dp" />
-        </activity>
-
-        <!-- In split-screen mode, this Activity is launched adjacent to another Activity. This is
-          controlled via a flag set in the intent that launches this Activity. -->
-        <activity
-            android:name="com.snapyr.docstest1.activities.AdjacentActivity"
-            android:taskAffinity="" />
-
-        <!-- This Activity is launched within an area defined in its launch intent. -->
-        <activity
-            android:name="com.snapyr.docstest1.activities.LaunchBoundsActivity"
-            android:taskAffinity="" />
-
-        <!-- This activity handles all configuration changes itself.
-        Callbacks for configuration changes are received in 'onConfigurationChanged'. -->
-        <activity
-            android:name="com.snapyr.docstest1.activities.CustomConfigurationChangeActivity"
-            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
-            android:launchMode="singleInstance"
-            android:taskAffinity="" />
-
-        <!-- This Activity is launched in a new task without any special flags or settings. -->
-        <activity
-            android:name="com.snapyr.docstest1.activities.BasicActivity"
-            android:launchMode="singleInstance"
-            android:taskAffinity="" />
-
     </application>
 
 </manifest>

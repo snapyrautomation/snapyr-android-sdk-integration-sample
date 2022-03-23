@@ -43,45 +43,36 @@ public abstract class LoggingActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Log.d(mLogTag, "onCreate");
-
-
     }
 
     @Override
     public void onPostCreate(Bundle savedInstanceState, PersistableBundle persistentState) {
         super.onPostCreate(savedInstanceState, persistentState);
-        Log.d(mLogTag, "onPostCreate");
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        Log.d(mLogTag, "onPause");
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        Log.d(mLogTag, "onDestroy");
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        Log.d(mLogTag, "onResume");
     }
 
     @Override
     public void onConfigurationChanged(Configuration newConfig) {
         super.onConfigurationChanged(newConfig);
-        Log.d(mLogTag, "onConfigurationChanged: " + newConfig.toString());
     }
 
     @Override
     protected void onPostCreate(Bundle savedInstanceState) {
         super.onPostCreate(savedInstanceState);
-        Log.d(mLogTag, "onPostCreate");
     }
 
     @Override
@@ -89,8 +80,6 @@ public abstract class LoggingActivity extends AppCompatActivity {
         super.onStart();
         // Start logging to UI.
         initializeLogging();
-
-        Log.d(mLogTag, "onStart");
     }
 
     @Override
@@ -98,15 +87,12 @@ public abstract class LoggingActivity extends AppCompatActivity {
         super.onStop();
         // Stop logging to UI when this activity is stopped.
         stopLogging();
-
-        Log.d(mLogTag, "onStop");
     }
 
     @Override
     public void onMultiWindowModeChanged(boolean isInMultiWindowMode) {
         super.onMultiWindowModeChanged(isInMultiWindowMode);
 
-        Log.d(mLogTag, "onMultiWindowModeChanged: " + isInMultiWindowMode);
     }
 
     // Logging and UI methods below.

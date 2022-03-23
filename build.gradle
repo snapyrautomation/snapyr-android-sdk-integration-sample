@@ -1,12 +1,22 @@
+buildscript {
+    repositories {
+        // Check that you have the following line (if not, add it):
+        mavenLocal()
+        google()
+        mavenCentral()
 
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.0.0'
 
+    }
+}
 
-
-
-
-
-
-
-
-
-
+allprojects {
+    repositories {
+        // Check that you have the following line (if not, add it):
+        mavenLocal()
+        google()
+        mavenCentral()
+    }
+}

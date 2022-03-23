@@ -49,67 +49,29 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/warning_multiwindow_disabled"
-                android:visibility="gone"
-                tools:visibility="visible"
-                style="@style/TextWarning"
-                android:paddingTop="@dimen/content_vertical_dividing_padding"
-                android:paddingBottom="@dimen/content_vertical_dividing_padding"
-                android:text="Enable multi-window mode to see this sample in action!" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:id="@+id/description"
                 android:text="@string/sample_introduction" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/button_start_basic"
-                android:onClick="onStartBasicActivity"
-                android:text="@string/start_default" />
+                android:id="@+id/do_identify_testuser"
+                android:onClick="onDoIdentify"
+                android:text="@string/do_identify_testuser" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/start_unresizable"
-                android:onClick="onStartUnresizableClick"
-                android:text="@string/start_unresizable" />
+                android:id="@+id/do_track_testevent"
+                android:onClick="onDoTrack"
+                android:text="@string/do_track_testevent" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/start_adjacent"
-                android:onClick="onStartAdjacentActivity"
-                android:text="@string/start_adjacent" />
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/start_customconfiguration"
-                android:onClick="onStartCustomConfigurationActivity"
-                android:text="@string/start_custom_activity" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingTop="@dimen/content_vertical_dividing_padding"
-                android:text="@string/sample_freeform_introduction" />
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/start_minimumsize"
-                android:onClick="onStartMinimumSizeActivity"
-                android:text="@string/start_minimum" />
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/start_launchbounds"
-                android:onClick="onStartLaunchBoundsActivity"
-                android:text="@string/start_bounds" />
+                android:id="@+id/do_flush"
+                android:onClick="onDoFlush"
+                android:text="@string/do_flush" />
 
         </LinearLayout>
     </ScrollView>

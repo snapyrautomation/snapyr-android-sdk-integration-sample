@@ -15,23 +15,21 @@
   -->
 
 <resources>
-    <string name="app_name">MultiWindow Playground</string>
-    <string name="introduction_title">Multiwindow Playground</string>
-    <string name="sample_introduction">This sample demonstrates the use of the multi-window API
-        available in Android N.\nFirst, switch this app into
-        <b>split-screen mode</b>
-        (for example by long-pressing the recents button). Each button below starts a new activity
-        with special flags.\n<b>See the files MainActivity.java and AndroidManifest.xml for
-        implementation details.</b>
+    <string name="app_name">Snapyr Imp Test</string>
+    <string name="introduction_title">Snapyr Implementation Test</string>
+    <string name="sample_introduction">This sample demonstrates a basic Snapyr SDK integration.
+        \n\nStart by tapping <b>Identify</b>, which will use a hard-coded user (named "testUser").
+        \n\nThen tap <b>Track</b>, which will send a hard-coded track event (named "testEvent").
+        \n\nBy default, Snapyr buffers events on the device and sends them to the API periodically.
+        \n Tap <b>Flush</b> after calling Identify and Track to immediately send to the API in order
+        to test more quickly.
     </string>
     <string name="sample_freeform_introduction">The buttons below demonstrate features only
         available in <b>free-form multi-window mode</b>.</string>
-    <string name="start_default">Start basic, default Activity</string>
-    <string name="start_unresizable">Start unresizable Activity</string>
-    <string name="start_adjacent">Start Activity adjacent</string>
-    <string name="start_minimum">Start Activity with minimum size</string>
-    <string name="start_bounds">Start Activity with launch bounds</string>
-    <string name="start_custom_activity">Start activity that handles configuration changes.</string>
+    <string name="do_identify_testuser">Identify testUser</string>
+    <string name="do_track_testevent">Track testEvent</string>
+    <string name="do_flush">Flush</string>
+
 
     <string name="activity_description_basic">This Activity was launched in a new task without any
         additional flags or options.
